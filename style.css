@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+/*Fontes*/
+/*Passion One*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap');
+
+:root{
+    --fonte1:Verdana,Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One',cursive;
+    --fonte3:'Sriracha',cursive;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,11 +17,13 @@
     font-size: 16px;
 }
 
-body{
+html, body{
     min-height: 100vh;
     width: 100vw;
     background-color: lightgray;
+    font-family: var(--fonte1);
 }
+
 header{
     height: 30vh;
     width: 100%;
@@ -24,14 +36,18 @@ header{
 header h1{
     text-align: center;
     padding: 20px;
-    font-size: 8rem;
+    font-family: var(--fonte2);
+    /* font-size: 15em; */
+    font-size: 10vw;
     /* text-transform: uppercase; Transforma todo o texto em maiúsculo */
     font-variant: small-caps; /*Utiliza caracteres maiúsculo no início e no restante do texto, variando apenas o 1º caracter*/
 }
+
 header a{
     text-decoration: none;
     color: white;
 }
+
 header .containertitulo{
     display: flex;
     justify-content: center;
@@ -44,21 +60,19 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     width: 100vw;
-    justify-content: center;
+    /* justify-content: center; */
     padding-left: 30px;
 }
 
-section p{
+section> p{
+    /* width: 100vw; */
     line-height: 2em;
+    font-family: var(--fonte3);
+    font-size:2em ;
+   
 }
 
-section.imagem>p{
-    background-color: rgba(0, 0, 0, 0.336);
-    width: fit-content;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.397);
-}
+
 section.normal{
     background-color: white;
     color:black;
@@ -68,6 +82,14 @@ section.imagem{
     background-color: rgba(0, 0, 0, 0.432);
     color: white;
 }
+
+/* section.imagem>p{
+    background-color: rgba(0, 0, 0, 0.336);
+     width: fit-content; 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.397);
+}  */
 
 footer{
     height: 3rem;
